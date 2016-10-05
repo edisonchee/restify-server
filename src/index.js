@@ -5,7 +5,8 @@ const server = restify.createServer();
 server.use(restify.bodyParser());
 
 server.post('/aws', (req, res) => {
-  console.log(req.body);
+  const body = JSON.parse(req.body);
+  console.log(`Subject: ${body.subject}\nMessage: ${body.message}`);
   res.send(204);
 });
 
