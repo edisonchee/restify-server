@@ -1,2 +1,2 @@
-# nginx-restify
-Simple API server with NGINX and Restify
+# restify-server
+Simple API server with Restify

@@ -1,0 +1,36 @@
+{
+  "name": "nginx-restify",
+  "version": "0.1.0",
+  "description": "Simple API server with Restify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edisonchee/restify-server.git"
+  },
+  "keywords": [
+    "nginx",
+    "restify",
+    "api",
+    "server"
+  ],
+  "author": "Edison Chee <edisonchee@live.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edisonchee/restify-server/issues"
+  },
+  "homepage": "https://github.com/edisonchee/restify-server#readme",
+  "dependencies": {
+    "restify": "^4.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.7.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^2.0.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.3.0"
+  }
+}
