@@ -1,4 +1,4 @@
-import { restify } from 'restify';
+import { default as restify } from 'restify';
 
 const server = restify.createServer();
 
