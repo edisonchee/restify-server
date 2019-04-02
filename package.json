@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel -w src/ -d build",
-    "start": "pm2 start build/"
+    "build": "./node_modules/.bin/babel src --out-dir build",
+    "start": "node build/index.js"
   },
   "repository": {
     "type": "git",
@@ -25,16 +25,17 @@
   },
   "homepage": "https://github.com/edisonchee/restify-server#readme",
   "dependencies": {
-    "babel-cli": "^6.16.0",
-    "restify": "^4.1.1"
+    "@babel/polyfill": "^7.4.0",
+    "restify": "^8.2.0"
   },
   "devDependencies": {
-    "babel-core": "^6.17.0",
-    "babel-preset-es2015": "^6.16.0",
-    "eslint": "^3.7.1",
-    "eslint-config-airbnb": "^12.0.0",
-    "eslint-plugin-import": "^2.0.0",
-    "eslint-plugin-jsx-a11y": "^2.2.2",
-    "eslint-plugin-react": "^6.3.0"
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4"
   }
 }

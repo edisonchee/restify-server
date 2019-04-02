@@ -2,7 +2,7 @@ import { default as restify } from 'restify';
 
 const server = restify.createServer();
 
-server.use(restify.bodyParser());
+server.use(restify.plugins.bodyParser());
 
 server.post('/api', (req, res) => {
   res.send(204);
